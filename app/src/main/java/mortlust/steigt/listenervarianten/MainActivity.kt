@@ -3,7 +3,7 @@ package mortlust.steigt.listenervarianten
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import mortlust.steigt.listenervarianten.databinding.ActivityMainBinding
-import android.view.LayoutInflater
+//import android.view.LayoutInflater
 import android.view.View
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
@@ -15,6 +15,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         B.buOne.setOnClickListener(this)
         B.buTwo.setOnClickListener(this)
+
+        val mDrei = MyListenerClass()
+        B.buThree.setOnClickListener(mDrei)
     }
 
     override fun onClick(v: View?) {

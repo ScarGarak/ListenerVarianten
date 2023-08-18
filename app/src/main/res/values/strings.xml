@@ -11,4 +11,5 @@
     <string name="buNineName">9</string>
     <string name="buTenName">10</string>
     <string name="tvOutputDefault">Output</string>
+    <string name="tvOutputBuThree">drei</string>
 </resources>
