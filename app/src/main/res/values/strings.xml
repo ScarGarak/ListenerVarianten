@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ListenerVarianten</string>
+    <string name="buOneName">1</string>
+    <string name="buTwoName">2</string>
+    <string name="buThreeName">3</string>
+    <string name="buFourName">4</string>
+    <string name="buFiveName">5</string>
+    <string name="buSixName">6</string>
+    <string name="buSevenName">7</string>
+    <string name="buEightName">8</string>
+    <string name="buNineName">9</string>
+    <string name="buTenName">10</string>
+    <string name="tvOutputDefault">Output</string>
+</resources>
