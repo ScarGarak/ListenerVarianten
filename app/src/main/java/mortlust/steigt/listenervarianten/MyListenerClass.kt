@@ -6,10 +6,10 @@ import android.widget.Button
 class MyListenerClass: View.OnClickListener {
     override fun onClick(v: View?) {
         val bu = v as Button
-        /*  Accessing resources without 'context'
+        /*  Accessing string resources with 'context'
          *  For system resources only!
          */
-        //bu.text = Resources.getSystem().getString(R.string.tvOutputBuThree)
-        bu.text = "drei"
+        bu.text = v.context.getString(R.string.tvOutputBuThree)
+        //bu.text = "drei"
     }
 }

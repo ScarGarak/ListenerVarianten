@@ -18,6 +18,34 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         val mDrei = MyListenerClass()
         B.buThree.setOnClickListener(mDrei)
+
+        B.buFour.setOnClickListener(MyListenerObject)
+
+        /*
+         * anonymous singleton-object with reference
+         *
+         * val mFive = object: View.OnClickListener {
+         *     override fun onClick(v: View?) {
+         *         B.tvOutput.text = getString(R.string.buFiveName)
+         *     }
+         * }
+         *
+         * as lambda expression
+         */
+        //val mFive = View.OnClickListener { B.tvOutput.text = "5" }
+        val mFive = View.OnClickListener { B.tvOutput.text = getString(R.string.buFiveName) }
+        B.buFive.setOnClickListener(mFive)
+
+        /*
+         * anonymous singleton-object without reference
+         */
+        B.buSix.setOnClickListener(object: View.OnClickListener {
+            override fun onClick(v: View?) {
+                B.tvOutput.text = getString(R.string.buSixName)
+            }
+        })
+
+
     }
 
     override fun onClick(v: View?) {
